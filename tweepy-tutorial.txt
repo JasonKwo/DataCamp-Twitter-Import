@@ -1,0 +1,34 @@
+
+In order to acces the twitter API you will need to create a twitter account and login to twitter apps and create a new app.
+
+Go to the keys and access tab and copy
+API KEY
+API SECRET
+ACESS TOKEN
+ACCESS TOKEN SECRET
+
+For this task we will be using DataCamps example key/token credentials
+
+Twitter has a number of APIs, including:
+Twitter's REST (representational state transfer) API allows users to read and write twitter data.
+The streaming APIs give developers low latency access to Twitter's global stream of tweet data.
+
+A proper implementation of a streaming client will be pushed messages indicating tweets and other events have occurred,
+without any of the overhead associated with polling a REST endpoint.  
+
+
+Public streams:  Streams of public data flowing through Twitter.  Suitable for following specific users or topics,
+and data mining
+
+User streams:  Single-user steams, containing roughly all of the data corresponding witha single user's view of Twitter
+
+Site streams:  The multi-user version of user streams.  Site streams are intended for servers which must connect to Twitter
+on behalf of many users.
+
+
+In this project we will be using the GET statuses/sample, which returns a small random sample of all public statuses.
+The tweets returned by the default access level are the same, so if two different clients connect to this endpoint they
+will see the same tweets.  If you wanted to return ALL public status, you would need to access Twitter's FIREHOSE API, which
+requires business purchasing/access (expensive).
+
+Resource URL:  https://stream.twitter.com/1.1/statuses/sample.json
