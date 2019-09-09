@@ -32,3 +32,11 @@ will see the same tweets.  If you wanted to return ALL public status, you would 
 requires business purchasing/access (expensive).
 
 Resource URL:  https://stream.twitter.com/1.1/statuses/sample.json
+
+
+Tweepy has an OAUTH handler, so we simply need to pass the access token/secret.
+
+We will need to define a twitter stream listener class.
+
+Hugo's defined a tweet listener, which creates a file 'tweets.txt', collects streaming tweets and writes them to 'tweets.txt'.
+Once 100 tweets have been collected, the user closes the connection and stops listening.
